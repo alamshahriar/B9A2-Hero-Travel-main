@@ -153,7 +153,6 @@ body {
     display: flex;
     gap: 24px;
     background: rgba(255, 255, 255, 0.3);
-    /* background-image: linear-gradient(180deg, #FFFFFF); */
     max-width: 800px;
     height: 84px;
     margin: auto;
@@ -180,7 +179,6 @@ input[type="text"] {
     background: #FF5400;
     padding: 16px 16px 16px;
     max-width: 174px;
-    /* height: 52px; */
     font-size: 16px;
     font-weight: bold;
     border: none;
@@ -227,11 +225,23 @@ input[type="text"] {
     font-weight: 800;
 }
 
-.massa {
+.destination {
     margin-top: 100px;
 }
 
-.massa-des {
+.odio {
+    text-align: center;
+    padding-bottom: 28px;
+}
+
+.odio-tittle {
+    color: #131318;
+    font-size: 40px;
+    font-weight: 800;
+    padding-bottom: 24px;
+}
+
+.odio-des {
     color: #424242;
     font-size: 16px;
     font-weight: 400;
@@ -239,35 +249,151 @@ input[type="text"] {
     margin: auto;
 }
 
-.destination {
-    margin-top: 48px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+.item-1 {
+    background-image: url("../image/Rectangle\ 5.png");
+    background-repeat: no-repeat;
+}
+
+.common-tittle {
+    color: #FFFFFF;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.your-destination,
+.choose {
+    display: flex;
     gap: 24px;
-    position: relative;
+    margin-bottom: 24px;
+}
+
+.item-1-tittle,
+.item-2-tittle {
+    padding: 132px 227px 133px 226px;
+}
+
+.item-2,
+.item-3,
+.item-4,
+.item-5,
+.item-6,
+.item-7 {
+    background-image: url("../image/Rectangle\ 8.png");
+    background-repeat: no-repeat;
+}
+
+.item-3 {
+    background-image: url("../image/Rectangle\ 6.png");
+}
+
+.item-3-tittle {
+    padding: 125px 130px 126px;
+}
+
+.item-4 {
+    background-image: url("../image/Rectangle\ 7.png");
+}
+
+.item-4-tittle {
+    padding: 125px 137px 126px;
+}
+
+.item-5 {
+    background-image: url("../image/Rectangle\ 9.png");
+}
+
+.item-5-tittle {
+    padding: 125px 80px 126px;
+}
+
+.item-6 {
+    background-image: url("../image/Rectangle\ 11.png");
+}
+
+.item-6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.item-7 {
+    background-image: url("../image/Rectangle\ 10.png");
+}
+
+.item-7 {
+    padding: 133px 260px;
+}
+
+.location {
+    margin-top: 100px;
+}
+
+.location-class {
     text-align: center;
 }
 
-.vacation-places {
-    margin-top: 24px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+.location-des {
+    color: #424242;
+    font-size: 16px;
+    font-weight: 400;
+    max-width: 643px;
+    margin: auto;
+    padding-bottom: 48px;
+}
+
+.service {
+    display: flex;
+    justify-content: center;
     gap: 24px;
 }
 
-.destination,
-.vacation-places {
-    grid-template-columns: repeat(1, 1fr);
-}
-
-.vacation-img img {
-    width: 573px;
-    height: 300px;
-    margin: auto;
-}
-
-.vacation-visit {
+.libero {
+    display: flex;
+    justify-content: center;
     margin-top: 24px;
+}
+
+.amet {
+    background: rgb(251, 181, 99, .1);
+    max-width: 573px;
+    height: 284px;
+    border: 1px solid #FBB563;
+    border-radius: 10px;
+    padding: 32px 55px 32px;
+}
+
+.hotel-tittle {
+    color: #131318;
+    font-size: 24px;
+    font-weight: 800;
+    padding-top: 32px;
+}
+
+.hotel-des {
+    color: #5A5A5D;
+    font-size: 16px;
+    font-weight: 400;
+    padding-bottom: 32px;
+}
+
+.amet-quis {
+    background: rgb(41, 206, 246, .1);
+    border: 1px solid #29CEF6;
+    max-width: 573px;
+    height: 284px;
+    border-radius: 10px;
+    padding: 32px 55px 32px;
+
+}
+
+.amet-risus {
+    background: rgb(233, 68, 68, .1);
+    border: 1px solid #E94444;
+    max-width: 573px;
+    height: 284px;
+    border-radius: 10px;
+    padding: 32px 55px 32px;
 }
 
 /* responsive media query */
@@ -348,7 +474,6 @@ input[type="text"] {
         margin-left: 20px;
         margin-right: 20px;
         background-size: cover;
-        background-repeat: no-repeat;
         background-position: center;
         border-radius: 16px;
         padding-bottom: 32px;
@@ -398,21 +523,123 @@ input[type="text"] {
         font-size: 14px;
     }
 
-    .vacation {
-        margin-top: 24px;
-        text-align: center;
-    }
-
-    .vacation {
+    .destination {
         margin-left: 20px;
         margin-right: 20px;
-        margin-top: 24px;
     }
 
-    .vacation-img img {
-        width: 335px;
-        height: 173px;
+    .your-destination,
+    .choose {
+        flex-direction: column
+    }
+
+    .odio-tittle {
+        font-size: 20px;
+    }
+
+    .odio-des {
+        max-width: 309px;
         margin: auto;
+    }
+
+    .item-1 {
+        background-image: url("../mobile-image/Rectangle\ 5.png");
+        background-repeat: no-repeat;
+    }
+
+    .item-2,
+    .item-3,
+    .item-4,
+    .item-5,
+    .item-6,
+    .item-7 {
+        background-image: url("../mobile-image/Rectangle\ 8.png");
+        background-repeat: no-repeat;
+    }
+
+    .item-3 {
+        background-image: url("../mobile-image/Rectangle\ 6.png");
+    }
+
+    .item-4 {
+        background-image: url("../mobile-image/Rectangle\ 7.png");
+    }
+
+    .item-5 {
+        background-image: url("../mobile-image/Rectangle\ 9.png");
+    }
+
+    .item-6 {
+        background-image: url("../mobile-image/Rectangle\ 11\ \(1\).png");
+    }
+
+    .item-7 {
+        background-image: url("../mobile-image/Rectangle\ 10.png");
+    }
+
+    .item-1,
+    .item-2,
+    .item-3,
+    .item-4,
+    .item-5 {
+        max-width: 335px;
+        height: 176px;
+        background-size: cover;
+        border-radius: 16px;
+    }
+
+    .item-1-tittle,
+    .item-2-tittle,
+    .item-3-tittle,
+    .item-4-tittle,
+    .item-5-tittle,
+    .item-6-tittle,
+    .item-7-tittle {
+        max-width: 335px;
+        font-size: 20px;
+    }
+
+    .item-1,
+    .item-2,
+    .item-3,
+    .item-4,
+    .item-5,
+    .item-6 {
+        background-size: cover;
+        border-radius: 16px;
+        height: 176px;
+        max-width: 335px;
+        display: flex;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .item-7 {
+        max-width: 335px;
+        height: 176px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        border-radius: 16px;
+    }
+
+    .location {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .service {
+        flex-direction: column;
+    }
+
+    .amet,
+    .amet-quis,
+    .amet-risus {
+        max-width: 335px;
+        height: 289px;
+        padding: 20px;
     }
 }
 
@@ -476,12 +703,8 @@ input[type="text"] {
         margin-left: 140px;
     }
 
-    .vacation {
-        text-align: center;
-    }
-
-    .destination,
-    .vacation-places {
-        grid-template-columns: repeat(1, 1fr);
+    .your-destination,
+    .choose {
+        flex-direction: column
     }
 }
