@@ -35,6 +35,8 @@ body {
 	font-family: "Mulish", sans-serif;
 }
 
+
+
 /* nav related style */
 .nav-bar {
 	width: 100%;
@@ -394,15 +396,18 @@ input[type="text"] {
 	border-radius: 10px;
 	padding: 32px 55px 32px;
 }
+
 .deals {
 	margin-top: 100px;
 }
+
 .deals-tittle {
 	color: #131318;
 	font-size: 40px;
 	font-weight: 800;
 	padding-bottom: 24px;
 }
+
 .deals-des {
 	color: rgba(19, 19, 24, 0.7);
 	font-size: 16px;
@@ -411,6 +416,7 @@ input[type="text"] {
 	margin: auto;
 	padding-bottom: 48px;
 }
+
 .tour-to-satorini {
 	background-image: url("../image/Group\ 39.png");
 	background-repeat: no-repeat;
@@ -422,6 +428,7 @@ input[type="text"] {
 	padding-bottom: 56px;
 	margin-bottom: 24px;
 }
+
 .tour {
 	background-color: rgba(255, 255, 255, 0.8);
 	max-width: 452px;
@@ -431,36 +438,43 @@ input[type="text"] {
 	padding-right: 77px;
 	border: 1px solid #ffffff;
 }
+
 .tour-tittle {
 	color: rgba(19, 19, 24, 0.7);
 	font-size: 16px;
 	padding-bottom: 24px;
 }
+
 .tour-tittle i {
 	color: #ff5400;
 	padding-left: 5px;
 }
+
 .to-tittle {
 	color: #131318;
 	font-size: 24px;
 	font-weight: 800;
 	padding-bottom: 16px;
 }
+
 .to-des {
 	color: #5a5a5d;
 	font-size: 16px;
 	font-weight: 400;
 	padding-bottom: 16px;
 }
+
 .price-tittle {
 	color: #ff5400;
 	font-size: 20px;
 	font-weight: 800;
 	padding-bottom: 24px;
 }
+
 .book-btn {
 	margin-bottom: 50px;
 }
+
 .satorini {
 	background-image: url("../image/Group\ 40.png");
 }
@@ -520,7 +534,7 @@ input[type="text"] {
 		display: block;
 	}
 
-	#check:checked ~ .menu {
+	#check:checked~.menu {
 		right: 0;
 	}
 
@@ -560,6 +574,11 @@ input[type="text"] {
 		padding-bottom: 32px;
 		padding-left: 16px;
 		padding-right: 15px;
+	}
+
+	.item-1-tittle,
+	.item-2-tittle {
+		padding: 0;
 	}
 
 	.input-text {
@@ -711,17 +730,20 @@ input[type="text"] {
 		height: 289px;
 		padding: 20px;
 	}
+
 	.deals,
 	.location,
 	.destination {
 		text-align: center;
 		margin-top: 20px;
 	}
+
 	.deals-des {
 		max-width: 309px;
 		margin: auto;
 		padding-bottom: 16px;
 	}
+
 	.tour-to-satorini {
 		background-size: cover;
 		background-position: center;
@@ -731,22 +753,27 @@ input[type="text"] {
 		padding-right: 16px;
 		padding-bottom: 16px;
 	}
+
 	.tour {
 		max-width: 303px;
 		height: 297px;
 		padding: 24px;
 	}
+
 	.tour-tittle {
 		padding-bottom: 16px;
 	}
+
 	.to-tittle {
 		font-size: 20px;
 		padding-bottom: 8px;
 	}
+
 	.to-des {
 		font-size: 14px;
 		padding-bottom: 12px;
 	}
+
 	.price-tittle {
 		font-size: 16px;
 		padding-bottom: 16px;
