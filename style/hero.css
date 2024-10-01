@@ -479,6 +479,163 @@ input[type="text"] {
 	background-image: url("../image/Group\ 40.png");
 }
 
+.place {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 120px;
+}
+
+.prefect-place {
+	padding-right: 25px;
+}
+
+.place-list {
+	color: #131318;
+	font-weight: bold;
+}
+
+.place-list li {
+	padding-bottom: 16px;
+}
+
+.more-btn {
+	padding: 14px 42px;
+}
+
+.today {
+	margin-top: 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 24px;
+}
+
+.travel-news {
+	display: flex;
+	flex-direction: column;
+	border: 1px solid #ff5400;
+	max-width: 474px;
+	height: 422px;
+	padding-top: 40px;
+	padding-left: 40px;
+	padding-right: 84px;
+	border-radius: 10px;
+}
+
+.travel-news-tittle {
+	color: #131318;
+	font-size: 24px;
+	font-weight: 800;
+	padding-bottom: 16px;
+}
+
+.travel-news-des {
+	color: #5a5a5d;
+	border-bottom: 1px solid rgba(19, 19, 19, 0.1);
+	max-width: 438px;
+	padding-top: 20px;
+	padding-bottom: 24px;
+}
+
+input[type="email"] {
+	color: rgba(19, 19, 24, 0.89);
+	padding: 20px;
+	border-radius: 8px;
+	max-width: 393px;
+	height: 52px;
+	font-size: 16px;
+	border: rgba(19, 19, 19, 0.5);
+	background-color: rgba(19, 19, 19, 0.05);
+	margin-bottom: 16px;
+	margin-top: 24px;
+}
+
+.sub-btn {
+	color: #ffffff;
+	font-size: 20px;
+	font-weight: 800;
+	max-width: 438px;
+	height: 52px;
+	margin-bottom: 40px;
+}
+
+.save {
+	background-image: url("../image/Rectangle\ 8\ \(1\).png");
+	background-repeat: no-repeat;
+	max-width: 672px;
+	height: 422px;
+	border-radius: 16px;
+}
+
+.save-btn {
+	/* transform: rotate(-45deg); */
+	margin-left: 416px;
+	margin-top: 302px;
+	max-width: 324px;
+	height: 120px;
+}
+
+.up {
+	font-size: 32px;
+	font-weight: 8000;
+}
+
+footer {
+	margin-top: 100px;
+	background-color: rgba(19, 19, 24, 0.1);
+}
+
+.last-section {
+	text-align: center;
+	padding-top: 110px;
+}
+
+.hero-travel {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 16px;
+}
+
+.last-section-tittle {
+	font-size: 32px;
+	font-weight: 800;
+	color: #131318;
+}
+
+.last-section-tittle span {
+	color: #ff5400;
+}
+
+.last-section-des {
+	color: #5a5a5d;
+	font-size: 16px;
+	max-width: 769px;
+	margin: auto;
+	padding-top: 15px;
+	padding-bottom: 32px;
+}
+
+.icon {
+	display: flex;
+	gap: 10px;
+	justify-content: center;
+	align-items: center;
+	max-width: 872px;
+	padding-bottom: 50px;
+	margin: auto;
+}
+
+.copy {
+	color: #131318;
+	font-size: 16px;
+	font-weight: 500;
+	border-top: 1px solid rgb(19, 19, 24, 0.1);
+	padding-top: 50px;
+	padding-bottom: 110px;
+}
+
 /* responsive media query */
 /* mobile devies */
 
@@ -714,7 +871,9 @@ input[type="text"] {
 	}
 
 	.location,
-	.deals {
+	.deals,
+	.place,
+	.today {
 		margin-left: 20px;
 		margin-right: 20px;
 	}
@@ -777,6 +936,86 @@ input[type="text"] {
 	.price-tittle {
 		font-size: 16px;
 		padding-bottom: 16px;
+	}
+
+	.place,
+	.today {
+		flex-direction: column;
+		margin-top: 60px;
+	}
+
+	.place-list li {
+		margin-left: 20px;
+	}
+
+	.more-btn {
+		margin-bottom: 24px;
+	}
+
+	.travel-news {
+		padding-top: 24px;
+		padding-left: 23px;
+		padding-right: 42px;
+	}
+
+	.save {
+		background-size: cover;
+		background-position: center;
+	}
+
+	.save-btn {
+		max-width: 214px;
+		height: 79px;
+		margin-left: 152px;
+		margin-top: 344px;
+	}
+
+	.up {
+		font-size: 21px;
+	}
+
+	.travel-news-tittle {
+		padding-bottom: 8px;
+	}
+
+	.travel-news-des {
+		padding-bottom: 16px;
+	}
+
+	input[type="email"] {
+		margin-top: 16px;
+		max-width: 288px;
+		height: 52px;
+		margin-bottom: 16px;
+	}
+
+	.sub-btn {
+		margin-bottom: 24px;
+	}
+
+	.last-section {
+		padding-top: 33px;
+	}
+
+	.last-section-tittle {
+		font-size: 21px;
+	}
+
+	.last-section-des {
+		max-width: 287px;
+		padding-bottom: 16px;
+	}
+
+	.icon {
+		padding-bottom: 24px;
+	}
+
+	.copy {
+		font-size: 14px;
+		padding-top: 24px;
+		padding-bottom: 31px;
+		max-width: 335px;
+		margin: auto;
 	}
 }
 
